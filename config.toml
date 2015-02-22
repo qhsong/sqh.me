@@ -6,8 +6,5 @@ theme = "liquorice"
 
 [params]
 	author = "qhsong"
-[[menu.main]]
-	name = "about me"
-	pre = "<i class='ds'></i>"
-	weight = -110
-	identifier = "about"
+	slogan = "status : missing"
+	dsShortname = "qhsong"

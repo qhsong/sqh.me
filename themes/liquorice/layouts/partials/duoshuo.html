@@ -1,0 +1,19 @@
+<!-- 多说评论框 start -->
+	<aside>
+			<div class="comment"><h3>评论</h3></div>
+			<div class="ds-thread" data-thread-key="{{with .GetParam "ds_identifier" }}{{ . }}{{ else }}{{ .Permalink }}{{end}}" data-title="{{with .GetParam "ds_title" }}{{ . }}{{ else }}{{ .Title }}{{end}}" data-url="{{with .GetParam "ds_url" }}{{ . }}{{ else }}{{ .Url }}{{end}}"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+var duoshuoQuery = {short_name:"{{ .Site.Params.dsShortname }}"};
+	(function() {
+	 		var ds = document.createElement('script');
+					ds.type = 'text/javascript';ds.async = true;
+							ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+									ds.charset = 'UTF-8';
+											(document.getElementsByTagName('head')[0] 
+											 		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+												})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+	</aside>

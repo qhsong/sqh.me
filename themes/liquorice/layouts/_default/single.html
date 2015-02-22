@@ -13,21 +13,21 @@
                         <h1 class="li-article-title">{{ .Title }}</h1>
                         <span class="li-article-taxonomies">
                             {{ with $categories }}
-                                Posted in
+                               发表在： 
                                 {{ range $categories }}
                                     <a href="{{ $baseurl }}/categories/{{ . | urlize }}">{{ . }}</a>
                                 {{ end }}
                             {{ end }}
 
                             {{ with $tags }}
-                                with tags
+                                标签：
                                 {{ range $tags }}
                                     <a href="{{ $baseurl }}/tags/{{ . | urlize }}">{{ . }}</a>
                                 {{ end }}
                             {{ end }}
                         </span>
                         {{ if or $categories $tags }} - {{ end }}
-                        <time class="li-article-date">{{ .Date.Format "Monday, January 2, 2006" }}</time>
+                        <time class="li-article-date">{{ .Date.Format "2006年01月02日 15:04:05" }}</time>
                     </header>
                     <section>
                         {{ .Content }}
@@ -37,12 +37,15 @@
         </div>
 
         {{ partial "author.html" .}}
-
+		
+		{{ if isset .Site.Params "dsShortname" }}
+			{{ partial "duoshuo.html" . }}
+		{{end}}
         <div class="row li-pagination">
             <div class="eight columns">
                 <div class="li-pagination-previous">
                     {{with .Prev}}
-                        Later article<br />
+                        上一篇<br />
                         <a href="{{.Permalink}}"> {{.Title}}</a>
                     {{else}}
                         &nbsp;
@@ -52,7 +55,7 @@
             <div class="eight columns">
                 <div class="li-pagination-next">
                     {{with .Next}}
-                        Older article<br />
+                        下一篇<br />
                         <a href="{{.Permalink}}"> {{.Title}}</a>
                     {{else}}
                         &nbsp;
@@ -61,6 +64,5 @@
             </div>
         </div>
     </div>
-
 {{ partial "footer.html" . }}
 {{ partial "tail.html" . }}
