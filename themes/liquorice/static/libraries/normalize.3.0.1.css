@@ -231,6 +231,7 @@ samp {
   color: #c7254e;
   background-color: #f9f2f4;
   border-radius: 4px;
+  padding: 2px 4px;
   font-family: monospace, monospace;
   font-size: 1em;
 }
