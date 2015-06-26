@@ -1,5 +1,5 @@
 +++
-Description = ""generate Doxygen document into dash script index"
+Description = "generate Doxygen document into dash script index"
 Tags = ["Doxygen","Dash","Golang"]
 date = "2015-06-26T15:11:10+08:00"
 title = "使用golang将Doxygen生成Dash Index"
