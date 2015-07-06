@@ -159,7 +159,7 @@ ul.li-article-list {
 }
 
 .li-main-article-list {
-    margin-top: 128px;
+  /**  margin-top: 128px; **/
 }
 
 /** Mobile Portrait (320px) **************************************************/
