@@ -1,6 +1,9 @@
 <article>
     <header>
-        <h2><a href="{{ .Permalink }}">{{ .Title }} {{ if .Draft }} (draft) {{end}}</a></h2>
-		<time class="li-article-date">{{ .Date.Format "2006年01月02日 15:04:05" }}</time>
-    </header>
+        <h2><a href="{{ .Permalink }}">{{ .Title }} {{ if .Draft }} (draft) {{end}}</a>
+				<small><time class="li-article-date">{{ .Date.Format "2006年01月02日 15:04:05" }}</time>
+				</small>
+</h2>
+		    </header>
+			<div class="tags-list"><span class="glyphicon glyphicon-tags"></span>{{ range .Params.tags}}<a class="tag-link">{{.}}</a>{{end}}</div>
 </article>
