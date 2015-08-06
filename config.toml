@@ -1,4 +1,4 @@
-baseurl = "http://sqh.com/"
+baseurl = "https://sqh.com/"
 title = "宋其翰的博客"
 languageCode = "zh-cn"
 MetaDataFormat = "toml"
