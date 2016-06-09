@@ -3,17 +3,17 @@
         <div class="row">
             <div class="sixteen columns">
                 <div class="li-brand li-left">
-					<a href="{{ .Site.BaseUrl }}" style="font-size:33px;">{{ .Site.Title }}</a><br>
+					<a href="{{ .Site.BaseURL }}" style="font-size:33px;">{{ .Site.Title }}</a><br>
 						{{.Site.Params.slogan}}
 			</div>
                 <div class="li-menu li-right">
                     <span class="li-menu-icon" onclick="javascript:toggle('menu');">&#9776;</span>
                     <ul id="menu2" class="li-menu-items">
-							<li><a href="{{.Site.BaseUrl}}/tech">技术文章</a>
-							<li><a href="{{.Site.BaseUrl}}/life">生活</a>
+							<li><a href="{{.Site.BaseURL}}/tech">技术文章</a>
+							<li><a href="{{.Site.BaseURL}}/life">生活</a>
 							<li><a href="https://github.com/qhsong">我的github</a>
                         {{ range .Site.Menus.main }}
-                            <li><a href="{{.Url}}"> {{ .Name }} </a></li>
+                            <li><a href="{{.URL}}"> {{ .Name }} </a></li>
                         {{end}}
                     </ul>
                 </div>
@@ -23,7 +23,7 @@
             <div class="sixteen columns">
                 <ul id="menu" class="li-menu-items li-menu-mobile">
                     {{ range .Site.Menus.main }}
-                        <li><a href="{{.Url}}"> {{ .Name }} </a></li>
+                        <li><a href="{{.URL}}"> {{ .Name }} </a></li>
                     {{end}}
                 </ul>
             </div>
