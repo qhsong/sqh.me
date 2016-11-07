@@ -15,7 +15,7 @@ You are given a target value to search. If found in the array return its index, 
 
 You may assume no duplicate exists in the array.
 
-
+<!--more-->
 这道题是前段时间在百度实习生面试的时候的一道题，当场面试的时候没有想明白，然后就挂在了这个题目上。。
 今天在Leetcode上看到这个题，总结了一下思路。
 面试的时候直接提出，找到分割点，这个问题就转换为简单的二分搜索问题。结果面试官说不行，Orz。。直接上来就要二分搜索。

@@ -17,6 +17,7 @@ title = "从男人开始学习bash(1)"
 
 当`bash`作为一个交互式的登陆程序启动时，首先会读取`/etc/profile`里的内容，然后依次找`~/.bash_profile, ~/.bash_login, and ~/.profile`。退出时，也是执行`/.bash_logout ，/etc/bash.bash_logout`。当以不登陆的shell启动时，就执行`~/.bashrc`。
 
+<!--more-->
 * 基本定义和保留字
 
 定义
