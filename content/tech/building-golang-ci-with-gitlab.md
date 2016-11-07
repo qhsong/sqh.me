@@ -8,7 +8,7 @@ title = "使用Gitlab CI构建持续集成"
 
 本文主要讲述使用Gitlab配合Gitlab CI进行自动化部署的过程。本方案是[2015北京GDG DevFest](https://github.com/gopher-beijing/talks/tree/master/20151108-GDGBeijingDevFest)中水羽哲演讲的内容的一个简单实现，适合的是我们自己随手搭建主机的实现方案。
 使用gitlab 8.2.3 构建，这个版本的Gitlab已经将CI直接融入到了UI中，不再是以前的两个版本的方案了，所以使用的时候请看清楚软件版本。
-
+<!--more-->
 ## 概念
 首先有几个概念，持续集成(Continous Integration)，持续交付(Continous Delivery)，持续部署(Continous Deployment)，我这里参考的是[阮一峰的网络日志](http://www.ruanyifeng.com/blog/2015/09/continuous-integration.html)来进行学习的。
 

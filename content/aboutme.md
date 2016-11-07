@@ -5,6 +5,7 @@ Description = "About me"
 Tags = [
    "我"
 ]
+menu = "main"
 +++
 
 关于我：
