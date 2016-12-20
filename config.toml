@@ -14,6 +14,7 @@ theme = "hugo-theme-yilia"
     mathjax="false"
     open_in_new=true
     inner_archive=false
+    tagcloud=true
 
 [[menu.subnav]]
     Name = "github"

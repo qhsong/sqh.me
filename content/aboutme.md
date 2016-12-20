@@ -12,7 +12,10 @@ menu = "main"
 
 目前就读于北京邮电大学硕士研三。
 
-在红帽Redhat QE实习，也正在找工作
+在红帽Redhat QE组和Insight组实习过
+
+目前在京东搜索组实习，年后入职京东。
+
 
 GPG key:
 ```bash
