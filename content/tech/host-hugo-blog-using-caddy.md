@@ -8,7 +8,8 @@ title = "使用Caddy和Hugo构建个人博客"
 
 [Hugo](http://gohugo.io/)是一个强大的静态博客生成器，由spf13使用Golang开发。在性能和生成文章的速度上都不错。目前的版本是0.20.6，依然没有迈出1.0的大版本号。一直在用Hugo进行博客的写作。（半年多没有更新博客了，逃
 
-[Caddy](https://caddyserver.com/)同样也是一个由Golang开发的HTTP server，其最大的亮点就是内建了HTTPS和HTTP2的支持，同时自动能够向Let's Encrypt申请证书。同时，支持Middleware的功能，使用Golang撰写的Middleware能够支持各种各样的功能，同时任何人都可以撰写自己的Middleware，个性化这个HTTP Server。  
+[Caddy](https://caddyserver.com/)同样也是一个由Golang开发的HTTP server，其最大的亮点就是内建了HTTPS和HTTP2的支持，同时自动能够向Let's Encrypt申请证书。同时，支持Middleware的功能，使用Golang撰写的Middleware能够支持各种各样的功能，同时任何人都可以撰写自己的Middleware，个性化这个HTTP Server。  <!--more-->
+
 
 ## 使用背景
 我自己的博客项目是托管在Github上，每一次撰写完成后，需要Push到Github上，然后再到Host上Pull下来，然后本地Hugo自动更新。之前的证书呢是定期去Let's Encrypt申请，一到证书过期日子就非常的麻烦。
