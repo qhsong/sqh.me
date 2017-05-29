@@ -1,5 +1,4 @@
 +++
-Categories = ["sofa-pbrpc", "源码“, "分析"]
 date = "2017-05-26T22:43:01+08:00"
 title = "sofa-pbrpc源码分析(1)"
 Description = "sofarpc 源码分析"
@@ -61,6 +60,7 @@ int main() {
 完成了域名解析之后就开始创建`RpcListener`对象，这个对象主要用于处理TCP的监听，同时将几个事件使用`boost::bind`函数进行注册，这个类是TCP处理处理重点。最后创建`TimerWorker`定时器用于处理定时任务。至此，server开始了运行。
 
 有几个可以值得学习的地方：
+
 * 采用ScopedLocker来对锁进行Lock Guard，成功使用对象的生存时间来控制锁的Lock和UnLock (妈妈再也不担心我忘了释放锁了
 * 当需要注册一个对象函数回调的时候，使用`boost::bind()`来进行注册，避免了传递this指针的问题。`shared_from_this()`能够完全避免指针被释放问题，当然，对应的类需要继承`public boost::enable_shared_from_this<T>`。
 ```C++
