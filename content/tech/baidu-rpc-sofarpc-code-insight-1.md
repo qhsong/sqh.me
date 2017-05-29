@@ -6,7 +6,7 @@ Tags = ["sofa-pbrpc", "源码", "C++", "boost"]
 +++
 
 ## 介绍
-(sofa-pbrpc)[https://github.com/baidu/sofa-pbrpc]是百度开源的一个C++ RPC库，使用Google Protobuf作为序列化协议，Asio网络库开发的一个C++ RPC库，现在有很多公司也都在使用。用他来学习boost::asio，C++11的一些新语法是个不错的选择。
+[sofa-pbrpc](https://github.com/baidu/sofa-pbrpc)是百度开源的一个C++ RPC库，使用Google Protobuf作为序列化协议，Asio网络库开发的一个C++ RPC库，现在有很多公司也都在使用。用他来学习boost::asio，C++11的一些新语法是个不错的选择。
 计划会通过一系列的文章来研究这个库，并且学习他的一些用法，以及C++语法的笔记。
 
 一个典型的服务器端程序如下所示：
