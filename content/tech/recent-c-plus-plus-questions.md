@@ -44,3 +44,8 @@ std::vector<int>(v).swap(v);
 然后使用swap交换了内部的指针，这样临时对象中的指针和空间就到了`v`中，`v`原本的数据就在这个临时对象中，并随着生命周期被释放。
 
 然而，这还要复制一遍，不如直接使用`shrink_to_fit`爽。。
+
+其实在某些场景下，`deque`会比`vector`更合适。因为它使用的是分段的内存块，而不是连续的内存块。
+
+## Ref
+* [高效使用 C++ 的 vector](http://senlinzhan.github.io/2015/03/31/C-%E4%BD%BF%E7%94%A8vector%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF/)
