@@ -7,7 +7,7 @@ Tags = ["c++", "stl", "UB"]
 
 本文对近期使用C++的两个问题进行汇总。
 <!--more-->
-## `static_cast` enmu 到未定义的值
+## `static_cast` enum 到未定义的值
 [https://stackoverflow.com/questions/18195312/what-happens-if-you-static-cast-invalid-value-to-enum-class](https://stackoverflow.com/questions/18195312/what-happens-if-you-static-cast-invalid-value-to-enum-class)
 
 对于这个问题，上面的回答解释了这个问题。显然这是一个未定义行为，以后在使用时要注意。
