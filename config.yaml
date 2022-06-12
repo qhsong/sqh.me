@@ -1,0 +1,25 @@
+baseurl: https://sqh.me/
+languageCode: zh-cn
+title: qhsong Blog
+MetaDataFormat: toml
+theme: hugo-PaperMod
+params:
+  env: production
+  author: qhsong
+  title: qhsong Blog
+  slogan: New!
+  avatar: https://www.gravatar.com/avatar/f876c5f1daa51dd2a16a02eb25b4280b?s=128
+  tagcloud: true
+  DateFormat: 2006-01-02
+  ShowPostNavLinks: true
+
+  homeInfoParams:
+    Title: "Life is Hard"
+    Content: "捡起了多年没有更新的博客，做项目或者有意思的东西会往上更新，尝试让自己输出。"
+
+  socialIcons:
+    - name: github
+      url: https://github.com/qhsong
+    - name: twitter
+      url: https://twitter.com/qihansong
+

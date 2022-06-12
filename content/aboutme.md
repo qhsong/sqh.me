@@ -1,31 +1,18 @@
 +++
-date = "2015-10-15T20:22:20+08:00"
+date = "2022-06-12T20:22:20+08:00"
 title = "关于我"
 Description = "About me"
-Tags = [
-   "我"
-]
-menu = "main"
 +++
 
-关于我：
 
-目前就读于北京邮电大学硕士研三。
+努力搬砖的程序员，没啥建树，只生产代码。
 
-在红帽Redhat QE组和Insight组实习过
+* 红帽Redhat QE组和Insight组实习。
 
-目前在京东搜索组实习，年后入职京东。
+* 京东主站搜索后台研发工程师 ~1.5year
 
+后relocate成都
+* 企业微信私有化版本后台开发工程师 ~3year
+* (current)腾讯云数据库SAAS后台开发工程师
 
-GPG key:
-```bash
-$ gpg  --fingerprint sqh@sqh.me
-pub   4096R/80A5E59B 2016-10-04
-	Key fingerprint = 5E80 7BA8 8E11 DDE8 053C  AC50 06EF A496 80A5 E59B
-uid                  qhsong <sqh@sqh.me>
-
-```
-
-在社交媒体上找到我：
-[Twitter](https://twitter.com/qihansong)
-[Github](https://github.com/qhsong)
+主营`C++`代码，略微会`Golang`。偶尔打打游戏，没啥追求。
