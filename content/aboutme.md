@@ -2,6 +2,7 @@
 date = "2022-06-12T20:22:20+08:00"
 title = "关于我"
 Description = "About me"
+menu = "main"
 +++
 
 
